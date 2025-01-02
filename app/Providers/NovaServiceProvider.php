@@ -38,7 +38,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         });
 
         Nova::withBreadcrumbs();
-        Nova::withoutThemeSwitcher();
 
         Nova::footer(function ($request) {
             return Blade::render('
@@ -46,7 +45,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     This is production!
                 @endenv
                  <div class="footer-year" style="text-align: center;">
-                    CLINICARE - IZZY &copy; 2024 - ' . date('Y') . ' Copyright: Todos los derechos reservados
+                    CLINICARE - PAYNODE &copy; 2024 - ' . date('Y') . ' Copyright: Todos los derechos reservados
                 </div>
             ');
         });
