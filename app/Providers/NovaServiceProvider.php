@@ -30,7 +30,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 MenuSection::make('Accesos', [
                     MenuItem::resource(User::class),
                 ])->icon('shield-check')->collapsedByDefault(),
-                MenuSection::make('Version')
+                MenuSection::make('Versión')
                     ->path('#')
                     ->withBadge(Badge::make(VersionController::getLatestVersionFromChangelog(), 'success'))
                     ->icon('document-check')
